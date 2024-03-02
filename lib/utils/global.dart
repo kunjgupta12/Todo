@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 //  Colors
 
@@ -10,7 +9,7 @@ const tertiaryColor = Color.fromARGB(255, 37, 37, 37);
 
 // TextStyles
 
-TextStyle appBarTextStyle = GoogleFonts.notoSans(
+TextStyle appBarTextStyle = TextStyle(
   fontSize: 30,
   color: primaryColor,
   fontWeight: FontWeight.bold,
@@ -37,21 +36,22 @@ TextStyle buttonTextStyleWhite =
     const TextStyle(color: Colors.white, fontSize: 23.0);
 TextStyle menuTextStyle =
     const TextStyle(fontSize: 22, color: Color(0xFFEAEAEA));
-TextStyle todoScreenStyle = GoogleFonts.notoSans(
+TextStyle todoScreenStyle = TextStyle(
   color: const Color(0xFFA8A8A8),
   fontSize: 23.0,
 );
-TextStyle todoScreenDetailsStyle = GoogleFonts.notoSans(
+TextStyle todoScreenDetailsStyle = TextStyle(
   color: const Color(0xFFA8A8A8),
   fontSize: 20.0,
 );
-TextStyle listInfoTextStyle = GoogleFonts.notoSans(
+TextStyle listInfoTextStyle = TextStyle(
   color: primaryColor,
   fontSize: 23.0,
 );
 TextStyle actionButtonTextStyle =
     TextStyle(fontSize: 20.0, color: primaryColor);
-TextStyle accountTextStyle = const TextStyle(fontSize: 20.0, color: Colors.white);
+TextStyle accountTextStyle =
+    const TextStyle(fontSize: 20.0, color: Colors.white);
 // Decorations
 
 InputDecoration emailInputDecoration = InputDecoration(
@@ -136,12 +136,12 @@ InputDecoration passwordInputDecoration(
             onPressed: onPressed),
         hintStyle: hintTextStyle);
 
-TextStyle optionsTextStyle = GoogleFonts.notoSans(
+TextStyle optionsTextStyle = TextStyle(
   fontSize: 17.0,
   color: const Color(0xFFEAEAEA),
 );
 
-TextStyle todoTitleStyle(condition) => GoogleFonts.notoSans(
+TextStyle todoTitleStyle(condition) => TextStyle(
       color: const Color(0xFFA8A8A8),
       fontSize: 23.0,
       decoration:

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tasks/utils/global.dart';
 import 'package:tasks/utils/routes.dart';
 import 'package:tasks/utils/validators.dart';
@@ -127,8 +126,8 @@ GestureDetector filteredWidget(context, title, infoText, data, icon) {
               child: Obx(
                 () => Text(
                   '${data.length}',
-                  style:
-                      GoogleFonts.notoSans(fontSize: 40.0, color: primaryColor),
+                  /*   style:
+                      GoogleFonts.notoSans(fontSize: 40.0, color: primaryColor),*/
                 ),
               ),
             ),
@@ -136,8 +135,8 @@ GestureDetector filteredWidget(context, title, infoText, data, icon) {
               padding: const EdgeInsets.only(left: 15.0),
               child: Text(
                 title,
-                style:
-                    GoogleFonts.notoSans(fontSize: 25.0, color: Colors.white),
+                /*      style:
+                    GoogleFonts.notoSans(fontSize: 25.0, color: Colors.white),*/
               ),
             ),
           ]),

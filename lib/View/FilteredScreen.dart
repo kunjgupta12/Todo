@@ -1,7 +1,6 @@
 // ignore_for_file: file_names, empty_statements
 
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:tasks/controllers/arrayController.dart';
 import 'package:tasks/controllers/authController.dart';
@@ -146,10 +145,12 @@ class _FilteredScreenState extends State<FilteredScreen> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            Text(widget.data[index].title!,
-                                                style: GoogleFonts.notoSans(
+                                            Text(
+                                              widget.data[index].title!,
+                                              /* style: GoogleFonts.notoSans(
                                                     color: Colors.white,
-                                                    fontSize: 25.0)),
+                                                    fontSize: 25.0)*/
+                                            ),
                                             (widget.data[index].details != '')
                                                 ? const SizedBox(height: 5.0)
                                                 : const SizedBox(),
@@ -160,12 +161,13 @@ class _FilteredScreenState extends State<FilteredScreen> {
                                                       ? false
                                                       : true,
                                               child: Text(
-                                                  widget.data[index].details!,
-                                                  style: GoogleFonts.notoSans(
+                                                widget.data[index].details!,
+                                                /* style: GoogleFonts.notoSans(
                                                     color:
                                                         const Color(0xFFA8A8A8),
                                                     fontSize: 20.0,
-                                                  )),
+                                                  )*/
+                                              ),
                                             ),
                                             Visibility(
                                                 visible:

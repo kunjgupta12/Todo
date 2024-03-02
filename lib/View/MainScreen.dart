@@ -7,7 +7,6 @@ import 'package:tasks/utils/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tasks/utils/widgets.dart';
 import 'package:tasks/view/ArrayScreen.dart';
 import 'package:tasks/view/DeleteScreen.dart';
@@ -276,12 +275,12 @@ class _MainScreenState extends State<MainScreen> {
                                                                   .arrays[index]
                                                                   .title ??
                                                               '',
-                                                          style: GoogleFonts
+                                                          /*     style: GoogleFonts
                                                               .notoSans(
                                                                   color: Colors
                                                                       .white,
                                                                   fontSize:
-                                                                      25.0),
+                                                                      25.0),*/
                                                         ),
                                                       ),
                                                       Padding(
@@ -296,12 +295,12 @@ class _MainScreenState extends State<MainScreen> {
                                                           children: [
                                                             Text(
                                                               '${arrayController.arrays[index].todos!.length}',
-                                                              style: GoogleFonts
+                                                              /*       style: GoogleFonts
                                                                   .notoSans(
                                                                       color:
                                                                           primaryColor,
                                                                       fontSize:
-                                                                          27.0),
+                                                                          27.0),*/
                                                             ),
                                                             Icon(
                                                               Icons
@@ -470,9 +469,11 @@ class CustomSearchDelegate extends SearchDelegate {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(filteredTodos[index].title!,
-                                style: GoogleFonts.notoSans(
-                                    color: Colors.white, fontSize: 25.0)),
+                            Text(
+                              filteredTodos[index].title!,
+                              /*   style: GoogleFonts.notoSans(
+                                    color: Colors.white, fontSize: 25.0)*/
+                            ),
                             (filteredTodos[index].details != '')
                                 ? const SizedBox(height: 5.0)
                                 : const SizedBox(),
@@ -480,11 +481,13 @@ class CustomSearchDelegate extends SearchDelegate {
                               visible: filteredTodos[index].details == ''
                                   ? false
                                   : true,
-                              child: Text(filteredTodos[index].details!,
-                                  style: GoogleFonts.notoSans(
+                              child: Text(
+                                filteredTodos[index].details!,
+                                /* style: GoogleFonts.notoSans(
                                     color: const Color(0xFFA8A8A8),
                                     fontSize: 20.0,
-                                  )),
+                                  )*/
+                              ),
                             ),
                             Visibility(
                                 visible: filteredTodos[index].date == '' &&
